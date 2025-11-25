@@ -7,7 +7,7 @@ Visit my portfolio: [https://bafanamaybhuda.com](https://bafana4949.github.io/Ba
 
 
  📸 Website Preview
-![My Portfolio Website](https://via.placeholder.com/800x400/2563eb/ffffff?text=Add+Screenshot+of+Your+Website+Here)
+![My Portfolio Website](https://github.com/Bafana4949/Bafana_Portfolio/blob/main/home.PNG)
 
 
 What's Included
