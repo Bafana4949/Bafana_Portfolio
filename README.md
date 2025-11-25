@@ -3,7 +3,7 @@ My Portfolio Website
 Welcome to my personal portfolio website! This is where I showcase my skills, projects, and experience as a Computer Science student and developer.
 
 🌐 Live Website
-Visit my portfolio: [https://bafanamaybhuda.com](https://bafanamaybhuda.com) 
+Visit my portfolio: [https://bafanamaybhuda.com](https://bafana4949.github.io/Bafana_Portfolio/) 
 
 
  📸 Website Preview
