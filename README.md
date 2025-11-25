@@ -12,11 +12,11 @@ Visit my portfolio: [https://bafanamaybhuda.com](https://bafana4949.github.io/Ba
 
 What's Included
 
-About Me** - My background and education
-Skills** - Programming languages and technologies I know
-Certifications** - My Cisco certifications
-Projects** - Links to my GitHub projects
-Contact** - How to reach me
+About Me - My background and education
+Skills - Programming languages and technologies I know
+Certifications - My Cisco certifications
+Projects - Links to my GitHub projects
+Contact - How to reach me
 
  🛠️ Built With
 
@@ -41,9 +41,9 @@ Downloadable CV
 
 📞 Contact Me
 
-Email**: bafanamay585@gmail.com
-Phone**: +27 66 017 9070
-Location**: Emalahleni, South Africa
+Email: bafanamay585@gmail.com
+Phone: +27 66 017 9070
+Location: Emalahleni, South Africa
 
  🔗 Connect With Me
 
@@ -53,4 +53,4 @@ Location**: Emalahleni, South Africa
 
 ---
 
-*This portfolio was created to showcase my web development skills and projects.*
+*This portfolio was created to showcase my web development skills and projects
