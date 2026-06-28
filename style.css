@@ -2078,3 +2078,223 @@ footer::after {
   opacity: 1;
   color: var(--accent);
 }
+
+/* ==========================================
+   Experience Section Styles
+   ========================================== */
+.experience {
+  background: var(--light);
+}
+
+.experience-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 31px;
+  width: 4px;
+  background: var(--gray-light);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 80px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  box-shadow: var(--shadow);
+  border: 4px solid var(--light);
+  z-index: 2;
+}
+
+.timeline-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  position: relative;
+  border-left: 5px solid var(--primary);
+}
+
+.timeline-header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--lighter);
+  padding-bottom: 15px;
+}
+
+.timeline-header h3 {
+  font-size: 1.4rem;
+  color: var(--darker);
+  margin-bottom: 5px;
+}
+
+.timeline-company {
+  font-weight: 700;
+  color: var(--primary);
+  margin-right: 15px;
+  font-size: 1rem;
+}
+
+.timeline-date {
+  color: var(--gray);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.timeline-bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-bullets li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.timeline-bullets li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--success);
+  font-weight: bold;
+}
+
+/* ==========================================
+   Education Section Styles
+   ========================================== */
+.education {
+  background: var(--light);
+}
+
+.education-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 30px;
+  position: relative;
+  overflow: hidden;
+  border-top: 5px solid var(--primary);
+}
+
+.education-icon {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.education-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  color: var(--darker);
+}
+
+.education-school {
+  display: block;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.education-date {
+  display: block;
+  color: var(--gray);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.education-grid div {
+  font-size: 0.95rem;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+}
+
+/* Bullets for Project Card */
+.project-bullets {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.project-bullets li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.project-bullets li::before {
+  content: "▪";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+/* ==========================================
+   Dark Theme Section Overrides
+   ========================================== */
+.dark-theme .timeline-content,
+.dark-theme .education-card,
+.dark-theme .project-card {
+  background: var(--lighter);
+  color: var(--dark);
+}
+
+.dark-theme .timeline-header {
+  border-color: #334155;
+}
+
+.dark-theme .timeline-icon {
+  border-color: var(--light);
+}
+
+.dark-theme .experience-timeline::before {
+  background: #334155;
+}
+
+.dark-theme .education-grid div {
+  color: var(--gray);
+}

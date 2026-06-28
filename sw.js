@@ -1,4 +1,4 @@
-const CACHE_NAME = "bafana-portfolio-v2";
+const CACHE_NAME = "bafana-portfolio-v3";
 const urlsToCache = [
   "/",
   "/index.html",
@@ -21,6 +21,12 @@ const urlsToCache = [
   "/icon-512.jpg",
   "/profile_optimized.jpg",
   "/profile2.jpg",
+  "/CV of Bafana Bhuda.pdf",
+  "/WIL letter BM Bhuda, 232097337.pdf",
+  "/Computer_hardware_basics.pdf",
+  "/Ethical_Hacker_certificate.pdf",
+  "/Intro_Data_Science.pdf",
+  "/Introduction_to_Cybersecurity_certificate.pdf",
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
   "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
 ];

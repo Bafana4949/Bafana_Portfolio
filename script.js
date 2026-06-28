@@ -55,15 +55,12 @@
 
       const typedTextSpan = document.getElementById("typed-text");
       const textArray = [
-        "Software Engineer",
-        "Full-Stack Developer",
-        "Penetration Tester",
-        "Database Administrator",
+        "Junior Full-Stack Developer",
+        "Mobile Developer",
+        "Database Systems Developer",
         "Software Developer",
-        "System Administrator",
-        "ICT Technician",
+        "Systems & DevOps Enthusiast",
         "Problem Solver",
-        "Tech Innovator",
       ];
       const typingDelay = 100;
       const erasingDelay = 50;
@@ -109,16 +106,21 @@
 
       function animateCounters() {
         counters.forEach((counter) => {
-          const target =
-            +counter.getAttribute("data-target") || +counter.innerText;
-          const count = +counter.innerText;
-          const increment = Math.ceil(target / speed);
+          const targetText = counter.getAttribute("data-target") || counter.innerText;
+          const isPercent = targetText.toString().includes('%');
+          const target = parseInt(targetText, 10);
 
-          if (count < target) {
-            counter.innerText = count + increment;
+          if (isNaN(target)) return;
+
+          const currentVal = parseInt(counter.innerText, 10) || 0;
+          const increment = Math.ceil(target / speed) || 1;
+
+          if (currentVal < target) {
+            const nextVal = Math.min(currentVal + increment, target);
+            counter.innerText = nextVal + (isPercent ? "%" : "");
             setTimeout(() => animateCounters(), 1);
           } else {
-            counter.innerText = target;
+            counter.innerText = targetText;
           }
         });
       }
@@ -141,10 +143,10 @@
 
       observer.observe(aboutSection);
 
-      document.getElementById("project-count").setAttribute("data-target", "4");
+      document.getElementById("project-count").setAttribute("data-target", "5");
       document
         .getElementById("certificate-count")
-        .setAttribute("data-target", "4");
+        .setAttribute("data-target", "5");
 
       const skillsSection = document.getElementById("skills");
       const skillObserver = new IntersectionObserver(
@@ -181,7 +183,7 @@
       }, animationObserverOptions);
 
       // Add animation classes to elements
-      document.querySelectorAll('.testimonial-card, .project-card, .certification-card').forEach(card => {
+      document.querySelectorAll('.testimonial-card, .project-card, .certification-card, .timeline-item, .education-card').forEach(card => {
         card.classList.add('fade-in');
         animationObserver.observe(card);
       });
